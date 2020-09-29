@@ -1,8 +1,8 @@
 <project default="runtests">
 	<property environment="env"/>
-	<property name="provar.home" value="D:/ProgramFiles/Provar_ANT_2.2.0.05"/>
-	<property name="testproject.home" value="../Sales/"/>
-	<property name="testproject.results" value="../Sales/ANT/Results"/>
+	<property name="provar.home" value="/usr/share/Provar_ANT_2.2.0.05/"/>
+	<property name="testproject.home" value="../provar-testing/"/>
+	<property name="testproject.results" value="../provar-testing/ANT/Results"/>
 	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
 	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
 	
@@ -20,10 +20,8 @@
 				resultsPath="${testproject.results}" 
 				resultsPathDisposition="Increment" 
 				testEnvironment="" 
-				webBrowser="Chrome" 
+				webBrowser="Chrome_Headless" 
 				webBrowserConfiguration="Full Screen"
-				webBrowserProviderName="Desktop"
-				webBrowserDeviceName="Full Screen" 
 				excludeCallableTestCases="false" 
 				salesforceMetadataCache="Reuse" 
 				projectCachePath="../../.provarCaches"
