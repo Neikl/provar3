@@ -34,7 +34,7 @@ pipeline {
 
             junit allowEmptyResults: true, testResults: 'ANT/Results/*.xml'
 
-            //cleanWs notFailBuild: true /* cleans up the workspace */
+            cleanWs notFailBuild: true /* cleans up the workspace */
 
         }
 
