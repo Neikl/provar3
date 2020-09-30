@@ -52,15 +52,15 @@ pipeline {
 
             echo 'Printing hosts'
 
-            sh 'cat /etc/hosts'
+            sh 'sudo cat /etc/hosts'
 
             echo 'Searching for provar directories/files in the system...'
 
-            sh 'find / -name "provar*"'
+            sh 'sudo find / -name "provar*"'
 
             echo 'Finding chrome drivers'
 
-            sh "find / -name '*chromedriver*'"
+            sh "sudo find / -name '*chromedriver*'"
 
         }        
 
