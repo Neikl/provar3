@@ -35,8 +35,6 @@
 		
 			<fileset dir="../tests/Test Cases for POC"><include name="Lead generation through API.testcase"/></fileset><fileset dir="../tests/Test Cases for POC"><include name="Verify whether unqualified Lead is created.testcase"/></fileset>
 
-			<emailProperties sendEmail="true" primaryRecipients="indiramummadi@gmail.com" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="true" attachZip="false"/>
-			<attachmentProperties includeAllFailuresInSummary="true" includeOnlyFailures="false" includeOnlyBdd="false" includeSkipped="false" includeTestCaseDescription="true" includeScreenshots="true" includeWarningMessages="false" includeInfoMessages="true" includeDebugMessages="false" includeTestStepTime="false" includeTestStepPathHierarchy="true" includeFullScreenShot="false"/>
 		</Run-Test-Case>
 
 	</target>
