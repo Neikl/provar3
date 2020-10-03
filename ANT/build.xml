@@ -33,7 +33,7 @@
 				invokeTestRunMonitor="true"
 				>
 		
-			<fileset dir="../tests/Test Cases for POC"><include name="Lead generation through API.testcase"/></fileset><fileset dir="../tests/Test Cases for POC"><include name="Verify whether unqualified Lead is created.testcase"/></fileset>
+			<fileset dir="./tests/Test Cases for POC"><include name="Lead generation through API.testcase"/></fileset><fileset dir="./tests/Test Cases for POC"><include name="Verify whether unqualified Lead is created.testcase"/></fileset>
 
 		</Run-Test-Case>
 
