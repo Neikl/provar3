@@ -9,7 +9,6 @@ pipeline {
 			steps {
             
 				checkout scm
-				sh "source /etc/profile"
 
             }
         }
@@ -19,8 +18,8 @@ pipeline {
 
             steps {
 
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"       
-
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+		sh "source /etc/profile"    
                 sh "xvfb-run ant -f ANT/build.xml"
 
             }
