@@ -9,7 +9,7 @@ pipeline {
 			steps {
             
 				checkout scm
-				source /etc/profile
+				sh "source /etc/profile"
 
             }
         }
