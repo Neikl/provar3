@@ -24,7 +24,15 @@ pipeline {
             }
 
         }
+        
+	    stage('Results to Artifact Repo') {
+            
+			steps {
+            
+				ansible-playbook 
 
+            }
+        }
     }
 
     post {
