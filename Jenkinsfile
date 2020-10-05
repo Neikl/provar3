@@ -29,7 +29,7 @@ pipeline {
             
 			steps {
             
-				ansible-playbook 
+				sh "ansible-playbook pushtos3.yml -vvv"
 
             }
         }
