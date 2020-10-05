@@ -3,11 +3,11 @@
 - name: "basic upload"
   community.aws.s3_sync:
     bucket: salesforce.sonata-software.results
-    file_root: /var/lib/jenkins/workspace/provar-testing/ANT/Results
+    file_root: /var/lib/jenkins/workspace/salesforce-demo/ANT/Results
 - name: "all the options"
   community.aws.s3_sync: 
     bucket: salesforce.sonata-software.results
     file_change_strategy: force
-    file_root: /var/lib/jenkins/workspace/provar-testing/ANT/Results
+    file_root: /var/lib/jenkins/workspace/salesforce-demo/ANT/Results
     include: "*.*"
     permission: public-read
