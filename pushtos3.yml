@@ -1,13 +1,4 @@
---- 
+---
 - hosts: localhost
-- name: "basic upload"
-  s3_sync: 
-    bucket: salesforce.sonata-software.results
-    file_root: /ANT/Results
-- name: "all the options"
-  s3_sync: 
-    bucket: salesforce.sonata-software.results
-    file_change_strategy: force
-    file_root: /ANT/Results
-    include: "*.*"
-    permission: private
+  roles:
+    - pushtos3
