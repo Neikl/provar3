@@ -19,8 +19,7 @@ pipeline {
             steps {
 
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-		sh "source /etc/profile"
-                sh "xvfb-run ant -f ANT/build.xml -v"
+                sh "source /etc/profile && xvfb-run ant -f ANT/build.xml -v"
 
             }
 
