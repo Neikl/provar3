@@ -1,0 +1,13 @@
+--- 
+- hosts: localhost
+- name: "basic upload"
+  s3_sync: 
+    bucket: locoust-csv-files
+    file_root: roles/s3/files/
+- name: "all the options"
+  s3_sync: 
+    bucket: locoust-csv-files
+    file_change_strategy: force
+    file_root: roles/s3/files
+    include: "*.*"
+    permission: private
